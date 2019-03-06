@@ -1,0 +1,12 @@
+<div class="greater">
+  <h1> @BE MORE – DO MORE@ </h1>
+  <div class="basic">
+    <ul class="list-group">
+      <li class="list-group-item"><img src="images/ccc.jpg"></li>
+    </ul>
+  </div>
+  <h1> Information about component(please click on below links:) </h1>
+  <ul class="list-group" *ngFor='let student of students' (click)="navigate(student.id)">
+    <a routerLink='gymservice/:id'>{{student.name}}</a>
+  </ul>
+</div>
